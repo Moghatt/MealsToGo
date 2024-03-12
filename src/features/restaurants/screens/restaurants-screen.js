@@ -1,16 +1,17 @@
-import { StatusBar, FlatList } from "react-native";
-import SafeAreaView from "react-native-safe-area-view";
-import { PaperProvider, Searchbar } from "react-native-paper";
+import { FlatList, View, TextInput, TouchableOpacity } from "react-native";
+import { PaperProvider } from "react-native-paper";
 import { StatusBar as ExpoStatusBar } from "expo-status-bar";
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components/native";
 
 import { RestaurantInfoCard } from "../components/restaurant-info-card.component";
 import { Spacer } from "../../../components/spacer/spacer.component";
-
-const SearchContainer = styled.View`
-  padding: ${(props) => props.theme.space[3]};
-`;
+import { useGetDataQuery } from "../../../services/restaurants/restaurantsApi";
+import { useSelector, useDispatch } from "react-redux";
+import { setRestaurants } from "../../../services/restaurants/restaurantsSlice";
+import { ActivityIndicator, Colors } from "react-native-paper";
+import { Search } from "../components/search.component";
+import { FavouritesBar } from "../../../components/favourites/favourites-bar.component";
 
 const RestaurantList = styled(FlatList).attrs({
   contentContainerStyle: {
@@ -18,38 +19,65 @@ const RestaurantList = styled(FlatList).attrs({
   },
 })``;
 
-function RestaurantsScreen() {
-  const [searchQuery, setSearchQuery] = React.useState("");
+const Loading = styled(ActivityIndicator)`
+  margin-left: -25px;
+`;
+const LoadingContainer = styled.View`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+`;
+
+function RestaurantsScreen({ navigation }) {
+  const [isToggled, setIsToggled] = useState(false);
+  const dispatch = useDispatch();
+  const { favourites } = useSelector((state) => state.favourites);
+  const { location, isLocationLoading } = useSelector((state) => state.location);
+
+  const { data: restaurants, error, isFetching } = useGetDataQuery(`${location.lat},${location.lng}`);
+  React.useEffect(() => {
+    if (restaurants) {
+      dispatch(setRestaurants(restaurants));
+    }
+  }, [restaurants, dispatch]);
+  if (location.lat === 0 && location.lng === 0) {
+    return (
+      <View>
+        <TextInput>not found</TextInput>
+      </View>
+    );
+  }
+  if (error) {
+    return (
+      <View>
+        <TextInput>somthing wen wrong</TextInput>
+      </View>
+    );
+  }
+  if (isFetching || isLocationLoading) {
+    return (
+      <LoadingContainer>
+        <Loading size={50} animating={true} color="blue" />
+      </LoadingContainer>
+    );
+  }
   return (
     <PaperProvider>
       <ExpoStatusBar />
-      <SearchContainer>
-        <Searchbar placeholder="Search" onChangeText={setSearchQuery} value={searchQuery} />
-      </SearchContainer>
+      <Search isFavouritesToggled={isToggled} onFavouritesToggle={() => setIsToggled(!isToggled)} />
+      {isToggled && <FavouritesBar favourites={favourites} />}
       <RestaurantList
-        data={[
-          { name: 1 },
-          { name: 2 },
-          { name: 3 },
-          { name: 4 },
-          { name: 5 },
-          { name: 6 },
-          { name: 7 },
-          { name: 8 },
-          { name: 9 },
-          { name: 10 },
-          { name: 11 },
-          { name: 12 },
-          { name: 13 },
-          { name: 14 },
-        ]}
-        renderItem={() => (
-          <Spacer position="bottom" size="large">
-            <RestaurantInfoCard />
-          </Spacer>
-        )}
+        data={restaurants}
+        renderItem={({ item }) => {
+          return (
+            <TouchableOpacity onPress={() => navigation.navigate("RestaurantDetail", { restaurant: item })}>
+              <Spacer position="bottom" size="large">
+                <RestaurantInfoCard restaurant={item} />
+              </Spacer>
+            </TouchableOpacity>
+          );
+        }}
         keyExtractor={(item) => item.name}
-        contentContainerStyle={{ padding: 16 }}
       />
     </PaperProvider>
   );

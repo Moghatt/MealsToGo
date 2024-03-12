@@ -1,0 +1,357 @@
+{
+  "html_attributions": [],
+  "next_page_token": "some token",
+  "results": [
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 41.886065,
+          "lng": -87.6208832
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.88758823029149,
+            "lng": -87.6194830697085
+          },
+          "southwest": {
+            "lat": 41.88489026970849,
+            "lng": -87.6221810302915
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+      "name": "Fairmont Chicago - Millennium Park",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 1194,
+          "html_attributions": [""],
+          "photo_reference": "",
+          "width": 1800
+        }
+      ],
+      "place_id": "some place id 21",
+      "plus_code": {
+        "compound_code": "",
+        "global_code": ""
+      },
+      "price_level": 3,
+      "rating": 4.4,
+      "reference": "",
+      "scope": "",
+      "types": ["lodging", "restaurant", "food", "point_of_interest", "establishment"],
+      "user_ratings_total": 2085,
+      "vicinity": "200 North Columbus Drive, Chicago"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 41.888868,
+          "lng": -87.626394
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.8904151302915,
+            "lng": -87.62518896970849
+          },
+          "southwest": {
+            "lat": 41.8877171697085,
+            "lng": -87.6278869302915
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+      "name": "Trump International Hotel & Tower® Chicago",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 2000,
+          "html_attributions": [""],
+          "photo_reference": "",
+          "width": 3000
+        }
+      ],
+      "place_id": "some place id 22",
+      "plus_code": {
+        "compound_code": "",
+        "global_code": ""
+      },
+      "rating": 4.1,
+      "reference": "",
+      "scope": "",
+      "types": ["spa", "lodging", "restaurant", "food", "gym", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 2624,
+      "vicinity": "401 North Wabash Avenue, Chicago"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 41.8870687,
+          "lng": -87.61948509999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.8887213802915,
+            "lng": -87.61806096970848
+          },
+          "southwest": {
+            "lat": 41.8860234197085,
+            "lng": -87.6207589302915
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+      "name": "Swissotel Chicago",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3024,
+          "html_attributions": [""],
+          "photo_reference": "",
+          "width": 4032
+        }
+      ],
+      "place_id": "some place id 23",
+      "plus_code": {
+        "compound_code": "",
+        "global_code": ""
+      },
+      "rating": 4.4,
+      "reference": "",
+      "scope": "",
+      "types": ["lodging", "restaurant", "food", "point_of_interest", "establishment"],
+      "user_ratings_total": 4059,
+      "vicinity": "323 East Wacker Drive, Chicago"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 41.87156110000001,
+          "lng": -87.62728609999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.8729340802915,
+            "lng": -87.62602206970848
+          },
+          "southwest": {
+            "lat": 41.8702361197085,
+            "lng": -87.6287200302915
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "name": "Lou Malnati's Pizzeria",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 2640,
+          "html_attributions": [""],
+          "photo_reference": "",
+          "width": 3960
+        }
+      ],
+      "place_id": "some place id 24",
+      "plus_code": {
+        "compound_code": "",
+        "global_code": ""
+      },
+      "price_level": 2,
+      "rating": 4.5,
+      "reference": "",
+      "scope": "",
+      "types": ["meal_delivery", "meal_takeaway", "restaurant", "food", "point_of_interest", "establishment"],
+      "user_ratings_total": 6103,
+      "vicinity": "805 South State Street, Chicago"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 41.88907469999999,
+          "lng": -87.62988229999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.89049998029149,
+            "lng": -87.62853766970849
+          },
+          "southwest": {
+            "lat": 41.8878020197085,
+            "lng": -87.6312356302915
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "name": "Siena Tavern",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 812,
+          "html_attributions": [""],
+          "photo_reference": "",
+          "width": 1220
+        }
+      ],
+      "place_id": "some place id 25",
+      "plus_code": {
+        "compound_code": "",
+        "global_code": ""
+      },
+      "price_level": 3,
+      "rating": 4.5,
+      "reference": "",
+      "scope": "",
+      "types": ["bar", "restaurant", "food", "point_of_interest", "establishment"],
+      "user_ratings_total": 1906,
+      "vicinity": "51 West Kinzie Street, Chicago"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 41.8846222,
+          "lng": -87.6297111
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.8859492302915,
+            "lng": -87.62826921970849
+          },
+          "southwest": {
+            "lat": 41.8832512697085,
+            "lng": -87.63096718029149
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "name": "Petterino's",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 1000,
+          "html_attributions": [""],
+          "photo_reference": "",
+          "width": 1500
+        }
+      ],
+      "place_id": "some place id 26",
+      "plus_code": {
+        "compound_code": "",
+        "global_code": ""
+      },
+      "price_level": 2,
+      "rating": 4.4,
+      "reference": "",
+      "scope": "",
+      "types": ["bar", "restaurant", "food", "point_of_interest", "establishment"],
+      "user_ratings_total": 1255,
+      "vicinity": "150 North Dearborn Street, Chicago"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 41.87801039999999,
+          "lng": -87.63489799999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.87941258029149,
+            "lng": -87.63347921970849
+          },
+          "southwest": {
+            "lat": 41.87671461970849,
+            "lng": -87.6361771802915
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "name": "Giordano's",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 750,
+          "html_attributions": [""],
+          "photo_reference": "",
+          "width": 1000
+        }
+      ],
+      "place_id": "some place id 27",
+      "plus_code": {
+        "compound_code": "",
+        "global_code": ""
+      },
+      "price_level": 2,
+      "rating": 4.5,
+      "reference": "",
+      "scope": "",
+      "types": ["meal_takeaway", "restaurant", "food", "point_of_interest", "establishment"],
+      "user_ratings_total": 6816,
+      "vicinity": "223 West Jackson Boulevard, Chicago"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 41.8813268,
+          "lng": -87.6246925
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.8826719802915,
+            "lng": -87.62322306970849
+          },
+          "southwest": {
+            "lat": 41.8799740197085,
+            "lng": -87.6259210302915
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "name": "The Gage",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 1367,
+          "html_attributions": [""],
+          "photo_reference": "",
+          "width": 2048
+        }
+      ],
+      "place_id": "some place id 28",
+      "plus_code": {
+        "compound_code": "",
+        "global_code": ""
+      },
+      "price_level": 3,
+      "rating": 4.5,
+      "reference": "",
+      "scope": "",
+      "types": ["bar", "restaurant", "food", "point_of_interest", "establishment"],
+      "user_ratings_total": 2771,
+      "vicinity": "24 South Michigan Avenue, Chicago"
+    }
+  ],
+  "status": "OK"
+}
