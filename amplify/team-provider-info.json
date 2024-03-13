@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-mealstogo-dev-123803-authRole",
+      "UnauthRoleArn": "arn:aws:iam::275361196426:role/amplify-mealstogo-dev-123803-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::275361196426:role/amplify-mealstogo-dev-123803-authRole",
+      "Region": "ap-southeast-2",
+      "DeploymentBucketName": "amplify-mealstogo-dev-123803-deployment",
+      "UnauthRoleName": "amplify-mealstogo-dev-123803-unauthRole",
+      "StackName": "amplify-mealstogo-dev-123803",
+      "StackId": "arn:aws:cloudformation:ap-southeast-2:275361196426:stack/amplify-mealstogo-dev-123803/86302dd0-e0de-11ee-8a1f-02313c5aef3b",
+      "AmplifyAppId": "duwxh1zhgh89y"
+    },
+    "categories": {
+      "auth": {
+        "mealstogo98f8eb6b": {}
+      }
+    }
+  }
+}
